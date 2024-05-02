@@ -1,0 +1,451 @@
+/* styles.css */
+
+/* Variables */
+:root {
+  --primary-color: #adaa68;
+  --secondary-color: #968c5b;
+  --accent-color: #624726;
+  --background-color: #eedeb4;
+}
+
+/* Body */
+body {
+  background-color: var(--background-color);
+  font-family: Arial, sans-serif;
+  color: var(--accent-color);
+}
+
+/* Header */
+header {
+  background-color: var(--primary-color);
+  padding: 20px 60px; /* Add padding to the header */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; /* Add padding to the navigation */
+}
+
+
+.right-nav {
+  display: flex;
+  align-items: center;
+  
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-size: 1.5rem;
+  line-height: 50px; /* Center text vertically according to logo's height */
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.nav ul li {
+  margin-right: 20px;
+}
+
+.nav ul li:last-child {
+  margin-right: 0;
+}
+
+.nav ul li a {
+  color: var(--accent-color);
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1.2rem; /* Increase font size for better visibility */
+}
+
+.nav ul li a:hover {
+  color: var(--secondary-color);
+}
+
+nav {
+  text-align: center;
+  margin-top: 10px;
+}
+
+nav a {
+  color: var(--accent-color);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  color: var(--secondary-color);
+}
+
+/* Buttons */
+button {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 12px 24px; /* Increase button padding */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 10px; /* Rounded button edges */
+  font-size: 1.2rem; /* Increase button font size */
+}
+
+button:hover {
+  background-color: var(--accent-color);
+}
+
+/* Page Content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+/* Registration Page */
+.registration-container {
+  background-color: var(--background-color); /* Match background color */
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registration-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+}
+
+.registration-form h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--accent-color); /* Match text color */
+}
+
+.registration-form label {
+  color: var(--accent-color); /* Match text color */
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="password"] {
+  border-radius: 15px;
+  font-size: 18px;
+  padding: 5px;
+  margin-left: 15px;
+}
+
+.registration-form button[type="button"] {
+  border-radius: 15px;
+  background-color: var(--primary-color); /* Match button background color */
+  color: white;
+  border-color: var(--primary-color); /* Match button border color */
+  margin-top: 10px;
+  margin-left: 140px;
+}
+
+.registration-form button[type="button"]:hover {
+  background-color: var(--secondary-color); /* Match button hover background color */
+  border-color: var(--secondary-color); /* Match button hover border color */
+}
+
+.registration-form p {
+  text-align: center;
+  margin-top: 10px;
+  color: var(--accent-color); /* Match text color */
+}
+
+.registration-form a {
+  color: var(--accent-color); /* Match link color */
+  text-decoration: none;
+}
+
+.registration-form a:hover {
+  color: var(--secondary-color); /* Match link hover color */
+}
+/* Checkout Page */
+.checkout-container {
+  text-align: center;
+}
+
+.checkout-icon {
+  width: 100px; /* Set icon width */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px;
+  margin-right: 87%; /* Add spacing below the icon */
+}
+
+.checkout-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center contents horizontally */
+  margin-top: 15px; /* Add margin-top */
+}
+
+.checkout-button {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 12px 24px; /* Increase button padding */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 10px; /* Rounded button edges */
+  font-size: 1.2rem; /* Increase button font size */
+}
+
+.total {
+  font-size: 1.2rem; /* Increase total font size */
+  margin-bottom: 10px; /* Add spacing below the total */
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+}
+
+.checkout-item p {
+  font-size: 0.9rem; /* Decrease font size for item details */
+}
+
+/* Product */
+.product {
+  border: 1px solid var(--accent-color);
+  background-color: white;
+  text-align: center;
+  width: 300px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.product img {
+  max-width: 100%;
+  max-height: 200px;
+  width: auto;
+  height: auto;
+}
+
+.product h3 {
+  margin-top: 0;
+}
+
+.product .description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 10px 0;
+}
+
+.product .price {
+  font-weight: bold; /* Style the price differently */
+  color: var(--secondary-color); /* Example color */
+}
+
+.product button {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.product button:hover {
+  background-color: var(--accent-color);
+}
+
+/* Display multiple items in a row */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px; /* Add padding to the container */
+}
+
+/* Cart */
+
+/* Cart Item */
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Align items and distribute space */
+  padding: 10px; /* Add padding to cart items */
+  border: 1px solid var(--accent-color);
+  margin-bottom: 10px;
+  background-color: white; /* Set background color to white */
+}
+
+.cart-item img {
+  width: 100px;
+  margin-right: 20px; /* Adjust margin between image and text */
+}
+
+/* Text Container */
+.text-container {
+  flex-grow: 1; /* Allow text container to grow and fill remaining space */
+}
+
+.text-container p {
+  margin: 0; /* Remove default margin */
+}
+
+/* Quantity Buttons */
+.quantity-buttons {
+  display: flex; /* Use flexbox to align buttons horizontally */
+  align-items: center;
+  margin: 20px;
+}
+
+/* Plus and Minus Buttons */
+.quantity-buttons button {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 5px; /* Adjust button padding */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  margin-left: 15px; /* Add space between buttons */
+}
+
+.quantity-buttons button:first-child {
+  margin-left: 0; /* Remove margin from the first button */
+}
+
+.quantity-buttons button img {
+  width: 25px;
+  height: 25px;
+  margin-right: 1px; /* Set width for button icon */
+}
+
+.quantity-buttons button:hover {
+  background-color: var(--accent-color);
+}
+
+/* Container for the checkout button */
+.checkout-button-container {
+  display: flex;
+  justify-content: flex-end; /* Align contents to the right */
+  margin-top: 15px;
+  margin-bottom: 30px; /* Add some margin at the top */
+}
+
+/* Proceed to Checkout button */
+.checkout-button {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.checkout-button:hover {
+  background-color: var(--accent-color);
+}
+
+/* Footer */
+
+/* Container for the entire page content */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the container takes up at least the full height of the viewport */
+  position: relative;
+}
+
+/* Delivery Page */
+.delivery-container {
+  margin-top: 10px;
+}
+
+.delivery-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0px;
+}
+
+.delivery-text {
+  margin-left: 50px; /* Add space to the left */
+}
+
+.delivery-button {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 10px 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.delivery-button:hover {
+  background-color: var(--accent-color);
+}
+
+.ordered-items {
+  list-style: none;
+  padding: 0px; /* Add padding */
+}
+
+.ordered-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  background-color: white; /* Set background color to white */
+  border: 1px solid var(--accent-color); /* Add border */
+  border-radius: 10px; /* Add rounded edges */
+  margin: 0 150px; /* Add margin to adjust width */
+}
+
+.ordered-item img {
+  width: 80px;
+  margin-right: 0px;
+}
+
+.ordered-item-image {
+  padding-left: 70px; /* Add padding to the right of the image */
+}
+
+.delivery-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delivery-icon {
+  width: 8%; /* Make the icon take full width */
+  height: auto;
+  margin-right: 730px;
+}
+
+/* Main content area */
+.main-content {
+  flex: 1; /* Allow the main content area to grow to fill remaining space */
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  margin-top: 20px;
+}
